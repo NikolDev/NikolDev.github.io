@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+};
 
-h1 {
-  color: #234568;
-  font-size: 250px;
-}
+body {
+  background-color: #240739;
+};
