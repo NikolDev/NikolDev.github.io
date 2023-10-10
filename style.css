@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-};
+}
 
 body {
   background-color: #240739;
-};
+}
 
 .name {
   font-size: 80px;
-  color: #566825;
-};
+  color: #fff;
+}
