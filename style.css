@@ -7,3 +7,8 @@
 body {
   background-color: #240739;
 };
+
+.name {
+  font-size: 80px;
+  color: #566825;
+};
