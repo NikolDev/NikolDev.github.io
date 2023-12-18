@@ -177,3 +177,21 @@ body {
     margin-top: 187px;
   }
 }
+
+@media (max-width: 430px) {
+  a {
+    font-size: 1.3em;
+  }
+  .nav a {
+    font-size: 1.4em;
+  }
+  .nav ul {
+    gap: 8px;
+  }
+  .countdown {
+    font-size: 1.3rem;
+  }
+  .content {
+    font-size: 1.2em;
+  }
+}
