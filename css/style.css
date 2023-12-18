@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1000px;
+  padding: 0px 25px;
+  height: 60px;
+  z-index: 100;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav a {
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  color: rgb(67, 211, 255);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.2em;
+}
+
+.adaptive {
+  display: flex;
+  align-items: center;
+  font-size: 3em;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+
+body {
+  background: url(../img/tokio_nochnoj_gorod_neboskreby_121628_3840x2400.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  min-height: 100vh;
+  color: rgb(240, 240, 240);
+  font-size: 10px;
+  overflow: hidden;
+}
+
+.container {
+  z-index: 99;
+}
+
+.countdown {
+  text-align: center;
+  margin-top: 9rem;
+  font-size: 3rem;
+}
+
+.countdown-container span {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 5px black;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.time {
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  border: 4px solid #96a8a7;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  backdrop-filter: blur(6px);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background: black;
+  margin-top: 175px;
+}
+
+.content {
+  text-align: center;
+  color: #b4b4b4;
+  font-size: 1.3em;
+}
+
+.company {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #165aec;
+}
+
+@media (max-width: 790px) {
+  a {
+    font-size: 1.9em;
+  }
+  .countdown {
+    font-size: 2.5rem;
+  }
+  .footer {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 670px) {
+  .nav a {
+    font-size: 1.7em;
+  }
+  .countdown {
+    font-size: 2.2rem;
+  }
+  .footer {
+    margin-top: 187px;
+  }
+  body {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 580px) {
+  .countdown {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 520px) {
+  a {
+    font-size: 1.7em;
+  }
+  .nav a {
+    font-size: 1.5em;
+  }
+  .nav ul {
+    gap: 15px;
+  }
+  .countdown {
+    font-size: 1.3rem;
+  }
+  .footer {
+    margin-top: 187px;
+  }
+}
