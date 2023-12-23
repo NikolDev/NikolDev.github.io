@@ -26,11 +26,11 @@
 }
 
 .nav a {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .nav a:hover {
-  color: rgb(67, 211, 255);
+  color: rgb(0, 119, 255);
 }
 
 a {
@@ -68,12 +68,18 @@ body {
   text-align: center;
   margin-top: 9rem;
   font-size: 3rem;
+  text-shadow: 2px 2px 9px black;
+  transition: all 0.4s ease;
+}
+
+.countdown:hover {
+  color: #165aec;
 }
 
 .countdown-container span {
   font-size: 30px;
   color: #fff;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 9px black;
 }
 
 .timer {
@@ -81,6 +87,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  transition: all 0.4s ease;
+}
+
+.timer:hover {
+  transform: scale(0.95);
 }
 
 .time {
@@ -111,6 +122,11 @@ body {
 
 .company {
   color: #fff;
+  transition: all 0.5s ease;
+}
+
+.company:hover {
+  color: aqua;
 }
 
 ::-webkit-scrollbar {
