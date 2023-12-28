@@ -104,6 +104,13 @@ body {
   backdrop-filter: blur(6px);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 52vh;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -149,9 +156,6 @@ body {
   .countdown {
     font-size: 2.5rem;
   }
-  .footer {
-    margin-top: 180px;
-  }
 }
 
 @media (max-width: 670px) {
@@ -160,9 +164,6 @@ body {
   }
   .countdown {
     font-size: 2.2rem;
-  }
-  .footer {
-    margin-top: 187px;
   }
   body {
     overflow: scroll;
@@ -188,9 +189,6 @@ body {
   }
   .countdown {
     font-size: 1.3rem;
-  }
-  .footer {
-    margin-top: 187px;
   }
 }
 
