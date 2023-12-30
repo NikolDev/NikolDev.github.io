@@ -156,9 +156,12 @@ footer {
   }
   .countdown {
     font-size: 2.5rem;
+    margin-bottom: 25px;
   }
-  .footer {
-    margin-top: 180px;
+  .time {
+    padding: 0.8rem 1.8rem;
+    font-size: 2.5rem;
+    border: 3px solid #96a8a7;
   }
 }
 
@@ -168,9 +171,16 @@ footer {
   }
   .countdown {
     font-size: 2.2rem;
+    margin-bottom: 10px;
   }
-  .footer {
-    margin-top: 187px;
+  .time {
+    padding: 0.6rem 1.5rem;
+    font-size: 2.3rem;
+    border: 3px solid #96a8a7;
+    margin: 0 1.2rem;
+  }
+  .countdown-container span {
+    font-size: 25px;
   }
   body {
     overflow: scroll;
@@ -193,6 +203,12 @@ footer {
   }
   .nav ul {
     gap: 15px;
+  }
+  .time {
+    padding: 0.6rem 1.4rem;
+    font-size: 2.3rem;
+    border: 3px solid #96a8a7;
+    margin: 1rem 1.2rem;
   }
   .countdown {
     font-size: 1.3rem;
