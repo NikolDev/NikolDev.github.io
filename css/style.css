@@ -27,10 +27,11 @@
 
 .nav a {
   transition: all 0.4s ease;
+  text-shadow: 2px 2px 5px black;
 }
 
 .nav a:hover {
-  color: rgb(0, 119, 255);
+  color:  #74a0ff;
 }
 
 a {
@@ -50,7 +51,7 @@ a {
 }
 
 body {
-  background: url(../img/bgNew1.jpg);
+  background: #000 url(../img/newBackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
@@ -73,7 +74,7 @@ body {
 }
 
 .countdown:hover {
-  color: #165aec;
+  color: #74a0ff;
 }
 
 .countdown-container span {
@@ -156,6 +157,9 @@ footer {
   .countdown {
     font-size: 2.5rem;
   }
+  .footer {
+    margin-top: 180px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -164,6 +168,9 @@ footer {
   }
   .countdown {
     font-size: 2.2rem;
+  }
+  .footer {
+    margin-top: 187px;
   }
   body {
     overflow: scroll;
@@ -189,6 +196,9 @@ footer {
   }
   .countdown {
     font-size: 1.3rem;
+  }
+  .footer {
+    margin-top: 187px;
   }
 }
 
