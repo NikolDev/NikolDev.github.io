@@ -308,20 +308,6 @@ span:hover {
   color: #00ffaa;
 }
 
-.happy {
-  display: flex;
-}
-
-.new {
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-}
-
-.new-two {
-  left: 1360px;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
