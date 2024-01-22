@@ -29,15 +29,6 @@ body {
   animation-delay: 1s;
 }
 
-@keyframes show{
-  0%{
-  opacity:0;
-  }
-  100% {
-  opacity:1;
-  }
-}
-
 .container {
   max-width: 1000px;
   margin: auto;
@@ -121,15 +112,7 @@ body {
   padding: 8px 15px;
   border: 1px solid #00ffaa;
   transition: all 0.5s ease;
-}
-
-@keyframes leftMove{
-  0%{
-  margin-left: -300px;
-  }
-  100% {
-  margin-left: 0px;
-  }
+  animation: ease 1.5s infinite btn;
 }
 
 .content-intro > a:hover {
@@ -168,15 +151,6 @@ body {
   animation-delay: 1s;
 }
 
-@keyframes about-moving{
-  0%{
-  margin-top: 230px;
-  }
-  100% {
-  margin-top: 0px;
-  }
-}
-
 .about > h2 {
   font-size: 1.3em;
   margin-bottom: 20px;
@@ -187,6 +161,10 @@ body {
 .about > h2:hover {
   color: #00ffaa;
   text-shadow: 0px 0px 15px #00ffaa;
+}
+
+.ana-about {
+  animation: ease 8s infinite imgRotate;
 }
 
 .movies-section {
@@ -281,6 +259,7 @@ body {
   width: 250px;
   height: 445px;
   transition: all 0.5s ease;
+  animation: ease-in-out 3s infinite screenshotes;
 }
 
 .img-photo:hover {
@@ -308,6 +287,20 @@ span:hover {
   color: #00ffaa;
 }
 
+.happy {
+  display: flex;
+}
+
+.new {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+
+.new-two {
+  left: 1360px;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -322,6 +315,73 @@ span:hover {
   /*box-shadow: 0px 0px 20px black;*/
   transition: all 0.3s ease;
 }
+
+/* ANIMATION */
+@keyframes about-moving{
+  0%{
+  margin-top: 230px;
+  }
+  100% {
+  margin-top: 0px;
+  }
+}
+
+@keyframes screenshotes {
+  0% {
+    box-shadow: 0px 0px 0px black;
+  } 50% {
+    box-shadow: 0px 0px 100px rgba(234, 0, 255, 0.3);
+  } 100% {
+    box-shadow: 0px 0px 0px black;
+  }
+}
+
+@keyframes imgRotate{
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@keyframes leftMove{
+  0%{
+  margin-left: -300px;
+  }
+  100% {
+  margin-left: 0px;
+  }
+}
+
+@keyframes btn{
+  0% {
+  margin-left: 0px;
+  }
+  50% {
+  margin-left: 15px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+}
+
+/* ADAPTIVE */
 
 @media (max-width: 890px) {
   .ana-intro-img {
