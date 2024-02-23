@@ -167,6 +167,20 @@ body {
   animation: ease 8s infinite imgRotate;
 }
 
+.video-presintation-section {
+  width: 100%;
+  display: flex;
+  padding-top: 65px;
+}
+
+.video-yt {
+  border-radius: 25px;
+}
+
+.vid {
+  margin: auto;
+}
+
 .movies-section {
   margin: 90px 0px 0px;
   transition: 1s;
@@ -383,6 +397,13 @@ span:hover {
 
 /* ADAPTIVE */
 
+@media (max-width: 1050px) {
+  .video-yt {
+    width: 800px;
+    height: 500px;
+  }
+}
+
 @media (max-width: 890px) {
   .ana-intro-img {
     width: 300px;
@@ -406,6 +427,10 @@ span:hover {
     width: 350px;
     height: 180px;
   }
+  .video-yt {
+    width: 650px;
+    height: 370px;
+  }
 }
 
 @media (max-width: 780px) {
@@ -422,21 +447,6 @@ span:hover {
   }
   .content-ad > p {
     font-size: 0.8em;
-  }
-  .knives > img {
-    width: 150px;
-    height: 200px;
-    box-shadow: -5px 5px 15px #000;
-  }
-  .blonde > img {
-    width: 150px;
-    height: 200px;
-    box-shadow: -5px 5px 15px #000;
-  }
-  .ghosted > img {
-    width: 200px;
-    height: 290px;
-    box-shadow: -5px 5px 15px #000;
   }
 }
 @media (max-width: 675px) {
@@ -480,24 +490,9 @@ span:hover {
   .content-intro a {
     font-size: 0.8em;
   }
-  .knives {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .blonde {
-    margin-bottom: 50px;
-  }
-  .ghosted {
-    margin-bottom: 50px;
-  }
-  .knives > h3 {
-    font-size: 1em;
-  }
-  .blonde > h3 {
-    font-size: 1em;
-  }
-  .ghosted {
-    margin-bottom: 50px;
+  .video-yt {
+    width: 500px;
+    height: 300px;
   }
 }
 @media (max-width: 594px) {
@@ -522,10 +517,6 @@ span:hover {
   .content-intro > p {
     font-size: 0.8em;
   }
-  .knives {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
   .foot > p {
     font-size: 0.9em;
   }
@@ -546,6 +537,10 @@ span:hover {
     align-items: center;
     gap: 15px;
   }
+  .video-yt {
+    width: 370px;
+    height: 220px;
+  }
 }
 
 @media (max-width: 415px) {
@@ -562,13 +557,11 @@ span:hover {
   #photo-geo > h2 {
     font-size: 1.2em;
   }
-  .knives > h3 {
-    font-size: 0.9em;
-  }
-  .blonde > h3 {
-    font-size: 0.9em;
-  }
   .foot > p {
     font-size: 0.75em;
+  }
+  .video-yt {
+    width: 340px;
+    height: 200px;
   }
 }
