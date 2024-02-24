@@ -175,6 +175,7 @@ body {
 
 .video-yt {
   border-radius: 25px;
+  box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .vid {
