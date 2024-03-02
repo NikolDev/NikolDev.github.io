@@ -1,0 +1,83 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #1b1b1b;
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader h1 {
+  color: #fff;
+  animation: showPre ease 0.6s infinite;
+  margin-top: 20px;
+}
+
+.preloader p {
+  color: #dddddd;
+  /*animation: changeColor ease 3s infinite;*/
+}
+
+.loader {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 8px solid #fff;
+  border-radius: 100%;
+  border-top-color: #b84eff;
+  animation: rotateCircle 0.75s ease infinite;
+}
+
+.load-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+@keyframes showPre {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #dddddd;
+  }
+  50% {
+    color: #b84eff
+  }
+  100% {
+    color: #dddddd;
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
