@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #1b1b1b;
   z-index: 1001;
   display: flex;
