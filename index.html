@@ -6,16 +6,22 @@
   <title>Знаки ПДД</title>
   <link rel="stylesheet" href="./css/style.css" id='theme'>
   <link rel="stylesheet" href="./css/preloader.css">
-  <link rel="icon" href="./icon/Знаки ПДД (Без фона).png">
+  <link rel="stylesheet" href="./css/supportService.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="./icon/TrafficSigns-icon.png">
   <script src="./source/wow.js"></script>
   <script>new WOW().init();</script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5883674059109212" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="preloader">
-    <div class="load-screen">
-      <div class="loader"></div>
+  <div class="message">
+    <a href="https://t.me/FAQFBC">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    </a>
+  </div>
+  <div class="preloader__block">
+    <div class="preloader__block_content">
+      <div class="preloader__block_loading"></div>
       <h1>FLOFYAPPS</h1>
       <p>Пожалуйста, подождите...</p>
     </div>
@@ -33,16 +39,16 @@
         <div class="menu__wrapper">
           <ul class="menu">
             <li class="item active">
-              <a href="https://nikoldev.github.io/#intro-geo">Главная</a>
+              <a href="#intro__section_geo">Главная</a>
             </li>
             <li class="item">
-              <a href="https://nikoldev.github.io/#about-geo">Приложение</a>
+              <a href="#about__section_geo">Приложение</a>
             </li>
             <li class="item">
-              <a href="https://nikoldev.github.io/#movies-geo">Преимущества</a>
+              <a href="#movies-geo">Преимущества</a>
             </li>
             <li class="item">
-              <a href="https://nikoldev.github.io/#photo-geo">Галерея</a>
+              <a href="#photo-geo">Галерея</a>
             </li>
           </ul>
         </div>
@@ -58,10 +64,10 @@
 
   <main class="menu">
     <div class="container">
-      <div class="intro-section">
-        <div id="intro-geo">
-          <div class="intro">
-            <div class="content-intro animate__animated animate__backInLeft wow">
+      <div class="intro__section">
+        <div id="intro__section_geo">
+          <div class="intro__block">
+            <div class="intro__content_text animate__animated animate__backInLeft wow">
               <h2>Знаки ПДД</h2>
               <p>
                 Лучшее приложения для изучения
@@ -70,18 +76,19 @@
                 со всеми пунктами ПДД России и
                 Беларуси. Попробуй сам и увидишь!
               </p>
-              <a href="https://play.google.com/store/apps/details?id=com.FLOFYAPPS.TrafficSigns" class="btn-flip btn-intro" data-back="Прямо сейчас" data-front="Установить"></a>
+              <a href="https://play.google.com/store/apps/details?id=com.FLOFYAPPS.TrafficSigns" class="btn-flip intro__content_btn" data-back="Прямо сейчас" data-front="Установить"></a>
             </div>
-            <div class="image-intro">
-              <img class="ana-intro-img animate__animated animate__backInRight" src="./img/AnaDeArmas-Intro.png" alt="">
+            <div class="intro__image">
+              <img class="intro-image animate__animated animate__backInRight" src="./img/Intro-Image.png" alt="">
             </div>
           </div>
         </div>
       </div>
-      <div class="about-section">
-        <div id="about-geo">
-          <div class="about animate__animated animate__fadeIn wow">
-            <img class="ana-about" src="./img/IconDeArmasAbout.png" alt="">
+
+      <div class="about__section">
+        <div id="about__section_geo">
+          <div class="about__section_content animate__animated animate__fadeIn wow">
+            <img class="about__section_image" src="./img/About-Image.png" alt="">
             <h2>- Nikolay</h2>
             <p>
               Одно из главных правил жизни гласит: садись за руль как
@@ -98,30 +105,32 @@
           </div>
         </div>
       </div>
-      <div class="video-presintation-section">
-        <div class="vid">
-          <iframe class="video-yt animate__animated animate__fadeInRightBig wow" width="990" height="557" src="https://www.youtube.com/embed/HGZuW8b3Dww?si=DGRJuOZHLbeRruvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <div class="video__section_prewiew">
+        <div class="video__section_block">
+          <iframe class="video__section_video animate__animated animate__fadeInRightBig wow" width="990" height="557" src="https://www.youtube.com/embed/HGZuW8b3Dww?si=DGRJuOZHLbeRruvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>      
       </div>
-      <div class="donat-section">
-        <div class="content-qiwi animate__animated animate__flipInX wow">
+      <div class="donat__section">
+        <div class="donat__section_content animate__animated animate__flipInX wow">
           <form action="https://qiwi.com/n/FLOFY" href="https://qiwi.com/n/FLOFY">
-            <button class="btn-donat">Перейти</button>
+            <button class="donat__section_content_btn">Перейти</button>
           </form>
           <a href="https://qiwi.com/n/FLOFY">
-            <img class="qiwi" src="./img/Qiwi-donate.png" alt="">
+            <img class="donat__section_bg" src="./img/Qiwi-donate.png" alt="">
           </a>
         </div>
       </div>
-      <div class="movies-section">
-        <div id="movies-geo">
-          <div class="movies">
+
+      <div class="edge__section">
+        <div id="edge__section_geo">
+          <div class="edge__section__content">
             <h2>Главные преимущества</h2>
 
-            <div class="images animate__animated animate__bounceInUp wow">
-              <div class="ad-1">
+            <div class="edge__section__content_items animate__animated animate__bounceInUp wow">
+              <div class="edge__section__content_item-1">
                 <img src="./img/One.png" alt="">
-                <div class="content-ad">
+                <div class="edge__section__content_text">
                   <h3>Красивый дизайн</h3>
                   <p>
                     Помимо всех преиму-
@@ -131,9 +140,9 @@
                   </p>
                 </div>
               </div>
-              <div class="ad-2">
+              <div class="edge__section__content_item-2">
                 <img src="./img/Two.png" alt="">
-                <div class="content-ad">
+                <div class="edge__section__content_text">
                   <h3>Функциональность</h3>
                   <p>
                     Внутри очень много
@@ -143,9 +152,9 @@
                   </p>
                 </div>
               </div>
-              <div class="ad-3">
+              <div class="edge__section__content_item-3">
                 <img src="./img/Three.png" alt="">
-                <div class="content-ad con-3">
+                <div class="edge__section__content_text con-3">
                   <h3>Полезность</h3>
                   <p>
                     Все, связанное с ПДД
@@ -159,59 +168,60 @@
           </div>
         </div>
       </div>
-      <div class="photo-section">
-        <div id="photo-geo">
+      
+      <div class="picture__section">
+        <div id="picture__section_geo">
           <h2>Скриншоты</h2>
-          <div class="photo animate__animated animate__fadeInUpBig wow">
-            <img class="img-photo" src="./img/1.webp" alt="">
-            <img class="img-photo" src="./img/2.webp" alt="">
-            <img class="img-photo" src="./img/3.webp" alt="">
-            <img class="img-photo" src="./img/4.webp" alt="">
-            <img class="img-photo" src="./img/5.webp" alt="">
-            <img class="img-photo" src="./img/6.webp" alt="">
+          <div class="picture__section__picture_items animate__animated animate__fadeInUpBig wow">
+            <img class="picture__section_item" src="./img/1.webp" alt="">
+            <img class="picture__section_item" src="./img/2.webp" alt="">
+            <img class="picture__section_item" src="./img/3.webp" alt="">
+            <img class="picture__section_item" src="./img/4.webp" alt="">
+            <img class="picture__section_item" src="./img/5.webp" alt="">
+            <img class="picture__section_item" src="./img/6.webp" alt="">
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer__section">
     <div class="container">
-      <div class="foot animate__animated animate__zoomIn wow">
-        <div class="social-section">
-          <div class="nav">
+      <div class="footer__section_block animate__animated animate__zoomIn wow">
+        <div class="footer__section__social">
+          <div class="footer__section__social_nav">
             <a href="#intro-geo">Главная</a>
             <a href="#about-geo">Приложение</a>
             <a href="#movies-geo">Преимущества</a>
             <a href="#photo-geo">Галерея</a>
           </div>
-          <div class="ourProject">
+          <div class="footer__section__social_project">
             <a href="https://nikoldev.github.io/">FLOFYAPPS</a>
             <a href="https://flofyapps.github.io/">School Museum</a>
             <a href="https://play.google.com/store/apps/details?id=com.FLOFYAPPS.TrafficSigns">Traffic Signs</a>
             <a href="https://play.google.com/store/apps/details?id=com.FlofyBoss.FlyAwayFromThem">Fly away</a>
           </div>
-          <div class="social">
+          <div class="footer__section__social_network">
             <a href="https://github.com/NikolDev">
-              <img class="GH" src="./img/Logo-Footer/GH.png" alt="">
+              <img class="GitHub" src="./img/Logo-Footer/GH.png" alt="">
             </a>
             <a href="https://t.me/PlayGameFB">
-              <img class="TG" src="./img/Logo-Footer/TG.png" alt="">
+              <img class="Telegram" src="./img/Logo-Footer/TG.png" alt="">
             </a>
             <a href="https://www.youtube.com/@flofyapps">
-              <img class="YT" src="./img/Logo-Footer/YT.png" alt="">
+              <img class="YouTube" src="./img/Logo-Footer/YT.png" alt="">
             </a>
             <a href="https://play.google.com/store/apps/dev?id=8009688118823042064">
-              <img class="TS" src="./img/Logo-Footer/GP.png" alt="">
+              <img class="TrafficSigns" src="./img/Logo-Footer/GP.png" alt="">
             </a>
             <a href="https://qiwi.com/n/FLOFY">
-              <img class="qiwi-logo" src="./img/Logo-Footer/Qiwi.png" alt="">
+              <img class="Qiwi" src="./img/Logo-Footer/Qiwi.png" alt="">
             </a>
           </div>
         </div>
-        <div class="settings-section">
+        <div class="footer__section__settings">
           <h1>FLOFYAPPS</h1>
-          <div class="links">
+          <div class="footer__section__settings_privicy-terms">
             <p>©2024 FLOFYAPPS</p>
             <a href="https://www.freeprivacypolicy.com/live/67d58bb0-cbdc-4857-82ff-2f0220527c70">Privacy Police -</a>
             <a href="https://www.freeprivacypolicy.com/live/7b4e0542-216b-4c6e-bcf5-17a74744b04c">Terms of Service</a>
@@ -223,6 +233,8 @@
   
   <script src="./source/circle-bg.js"></script>
   <script src="./source/app.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!--<script src="./source/showstorm.js"></script>-->
 </body>
 </html>
