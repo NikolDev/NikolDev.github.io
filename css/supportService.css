@@ -1,0 +1,42 @@
+.message {
+  position: fixed;
+  right: 80px;
+  z-index: 99;
+  bottom: 60px;
+}
+
+ion-icon {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  background: #b84eff;
+  border-radius: 100%;
+  box-shadow: 0 5px 20px 5px rgba(255, 96, 255, 0.3);
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+} 
+
+ion-icon:hover {
+  transform: scale(0.95);
+  background: #9738d6;
+  box-shadow: 0 5px 60px 5px #9738d6;
+}
+
+@media (max-width: 1050px) {
+  .message {
+    right: 40px;
+  }
+}
+
+@media (max-width: 675px) {
+  .message {
+    right: 25px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .message {
+    right: 25px;
+    bottom: 25px;
+  }
+}
