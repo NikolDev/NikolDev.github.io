@@ -1,4 +1,4 @@
-.preloader {
+.preloader__block {
   position: fixed;
   left: 0;
   top: 0;
@@ -12,18 +12,18 @@
   align-items: center;
 }
 
-.preloader h1 {
+.preloader__block h1 {
   color: #fff;
   animation: showPre ease 0.6s infinite;
   margin-top: 20px;
 }
 
-.preloader p {
+.preloader__block p {
   color: #dddddd;
   /*animation: changeColor ease 3s infinite;*/
 }
 
-.loader {
+.preloader__block_loading {
   content: "";
   width: 75px;
   height: 75px;
@@ -33,7 +33,7 @@
   animation: rotateCircle 0.75s ease infinite;
 }
 
-.load-screen {
+.preloader__block_content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +73,11 @@
   }
 }
 
-.loaded_hiding .preloader {
+.loaded_hiding .preloader__block {
   transition: 0.3s opacity;
   opacity: 0;
 }
 
-.loaded .preloader {
+.loaded .preloader__block {
   display: none;
 }
