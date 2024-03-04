@@ -326,7 +326,7 @@ body {
 }
 
 .about__section_image {
-  animation: ease 8s infinite imgRotate;
+  animation: ease 2s infinite imgRotate;
 }
 
 .video__section_prewiew {
