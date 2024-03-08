@@ -25,7 +25,7 @@ body {
       rgba(7, 7, 7, 0.1) 66%,
       rgba(7, 7, 7, 0.1) 99%
   ),
-  linear-gradient(40deg, #040a22, #3d0f50, #3e1750, #6b467c);
+  linear-gradient(40deg, #040a22, #320b42, #280e35, #4a2b58);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -605,16 +605,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1f1f1f;
+  background: #14001b;
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 6px;
-  background: #b84eff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: linear-gradient(#46005f, #14001b);
   /*box-shadow: 0px 0px 20px black;*/
   transition: all 0.3s ease;
 }
