@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/style.css" id='theme'>
   <link rel="stylesheet" href="./css/preloader.css">
   <link rel="stylesheet" href="./css/supportService.css">
+  <link rel="stylesheet" href="./css/colorSchemeBlock.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="icon" href="./icon/TrafficSigns-icon.png">
   <script src="./source/wow.js"></script>
@@ -14,14 +15,45 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5883674059109212" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="btn-up btn-up_hide"></div>
+  <div class="swichColorBlock">
+    <div class="switchColors">
+      <h1 class="nameColors">Выберите цветовую схему</h1>
+      <div class="switchSettings">
+        <div class="colorViolet" id="FirstChose">
+          <h2>Волшебное небо</h2>
+          <div class="choiseColors">
+            <ion-icon name="checkmark-outline"></ion-icon>
+            <p>По умолчанию</p>
+          </div>
+          <img class="prewiew" src="./img/violet.webp" alt="">
+          <div class="colors">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+          </div>
+        </div>
+
+        <div class="colorBlue" id="SecondChose">
+          <h2>Глубокая ночь</h2>
+          <img class="prewiew-two" src="./img/Blue.webp" alt="">
+          <div class="colors">
+            <span class="first-2"></span>
+            <span class="second-2"></span>
+            <span class="third-2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="message">
     <a href="https://t.me/FAQFBC">
-      <ion-icon name="chatbubble-outline"></ion-icon>
+      <ion-icon class="help" name="chatbubble-outline"></ion-icon>
     </a>
   </div>
   <div class="preloader__block">
     <div class="preloader__block_content">
-      <!--<div class="preloader__block_loading"></div>-->
       <img src="./img/Logotips.png" alt="" class="preloader__block_loading">
       <h1>FLOFYAPPS</h1>
       <p>Пожалуйста, подождите...</p>
@@ -40,16 +72,16 @@
         <div class="menu__wrapper">
           <ul class="menu">
             <li class="item active">
-              <a href="#intro__section_geo">Главная</a>
+              <a id="hideMain" href="#intro__section_geo">Главная</a>
             </li>
             <li class="item">
-              <a href="#about__section_geo">Приложение</a>
+              <a id="hideApp" href="#about__section_geo">Приложение</a>
             </li>
             <li class="item">
-              <a href="#movies-geo">Преимущества</a>
+              <a id="hideEdge" href="#edge__section_geo">Преимущества</a>
             </li>
             <li class="item">
-              <a href="#photo-geo">Галерея</a>
+              <a id="hideGallery" href="#picture__section_geo">Галерея</a>
             </li>
           </ul>
         </div>
@@ -222,6 +254,7 @@
         </div>
         <div class="footer__section__settings">
           <h1>FLOFYAPPS</h1>
+          <button class="switch-btn" id="switchMode">Сменить тему</button>
           <div class="footer__section__settings_privicy-terms">
             <p>©2024 FLOFYAPPS</p>
             <a href="https://www.freeprivacypolicy.com/live/67d58bb0-cbdc-4857-82ff-2f0220527c70">Privacy Police -</a>
@@ -236,6 +269,5 @@
   <script src="./source/app.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!--<script src="./source/showstorm.js"></script>-->
 </body>
 </html>
