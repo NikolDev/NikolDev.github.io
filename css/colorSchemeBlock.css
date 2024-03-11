@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-ion-icon {
+.active-icon {
   color: rgb(0, 132, 255);
   font-size: 1.1em;
   padding: 3px;
@@ -243,11 +243,11 @@ ion-icon {
 
 @media (max-width: 449px) {
   .switchColors {
-    width: 350px;
+    width: 315px;
     height: 670px;
   }
   .nameColors {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
   }
   .prewiew {
@@ -259,13 +259,13 @@ ion-icon {
     width: 250px;
   }
   .colorViolet {
-    width: 290px;
+    width: 280px;
     height: 300px;
     gap: 10px;
   }
   .colorBlue {
     gap: 10px;
-    width: 290px;
+    width: 280px;
     height: 260px;
   }
 }
