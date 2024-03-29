@@ -243,29 +243,31 @@
 
 @media (max-width: 449px) {
   .switchColors {
-    width: 315px;
-    height: 670px;
+    width: 310px;
+    height: 620px;
   }
   .nameColors {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
   }
   .prewiew {
-    height: 130px;
-    width: 250px;
+    height: 120px;
+    width: 240px;
+    box-shadow: none;
   }
   .prewiew-two {
-    height: 130px;
-    width: 250px;
+    height: 120px;
+    width: 240px;
+    box-shadow: none;
   }
   .colorViolet {
-    width: 280px;
-    height: 300px;
+    width: 270px;
+    height: 280px;
     gap: 10px;
   }
   .colorBlue {
     gap: 10px;
-    width: 280px;
-    height: 260px;
+    width: 270px;
+    height: 240px;
   }
 }

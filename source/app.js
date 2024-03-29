@@ -12,13 +12,13 @@ switchMode.onclick = function () {
 }
 
 firstChose.onclick = function () {
-  theme.href = './css/style.css';
+  theme.href = './css/VioletBackground.css';
   switchBlock.style.opacity = "0";
   switchBlock.style.visibility = "hidden";
 }
 
 secondChose.onclick = function () {
-  theme.href = './css/colorScheme.css';
+  theme.href = './css/BlueBackground.css';
   switchBlock.style.opacity = "0";
   switchBlock.style.visibility = "hidden";
 }
