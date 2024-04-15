@@ -812,3 +812,8 @@ html {
     height: 200px;
   }
 }
+
+::selection {
+  background: #c446ff;
+  color: #fff;
+ }

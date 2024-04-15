@@ -736,4 +736,12 @@ html {
     width: 320px;
     height: 200px;
   }
+}
+::-moz-selection {
+  background: #c446ff;
+  color: #fff;
+}
+::selection {
+  background: #c446ff;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
