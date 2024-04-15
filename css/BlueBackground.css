@@ -1,80 +1,62 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background-image: radial-gradient(
-    circle at 20% 100%,
-      rgba(184, 184, 184, 0.1) 0%,
-      rgba(184, 184, 184, 0.1) 33%,
-      rgba(96, 96, 96, 0.1) 33%,
-      rgba(96, 96, 96, 0.1) 66%,
-      rgba(7, 7, 7, 0.1) 66%,
-      rgba(7, 7, 7, 0.1) 99%
-  ),
-  linear-gradient(40deg, #040a22, #170b42, #140e35, #2e2b58);
+  background-image: radial-gradient(circle at 20% 100%, rgba(184, 184, 184, 0.1) 0%, rgba(184, 184, 184, 0.1) 33%, rgba(96, 96, 96, 0.1) 33%, rgba(96, 96, 96, 0.1) 66%, rgba(7, 7, 7, 0.1) 66%, rgba(7, 7, 7, 0.1) 99%), linear-gradient(40deg, #040a22, #170b42, #140e35, #2e2b58);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* MAIN */
-
 .btn-flip {
-	opacity: 1;
-	outline: 0;
-	color: #fff;
-	line-height: 40px;
-	position: relative;
-	text-align: center;
-	letter-spacing: 1px;
-	display: inline-block;
-	text-decoration: none;
-	font-family: 'Open Sans';
-	text-transform: uppercase;
-	
-  &:active {
-    transform: scale(0.9);
-  }
-
-	&:hover{
-		
-		&:after{
-			opacity: 1;
-			transform: translateY(0) rotateX(0);
-		}
-		
-		&:before{
-			opacity: 0;
-			transform: translateY(50%) rotateX(90deg);
-		}
-	}
-	
-	&:after{
-		top: 0;
-		left: 0;
-		opacity: 0;
-		width: 100%;
-		color: #323237;
-		display: block;
-		transition: 0.5s;
-		position: absolute;
-		background: #adadaf;
-		content: attr(data-back);
-		transform: translateY(-50%) rotateX(90deg);
-	}
-	
-	&:before{
-		top: 0;
-		left: 0;
-		opacity: 1;
-		color: #ffffff;
-		display: block;
-		padding: 0 30px;
-		line-height: 40px;
-		transition: 0.5s;
-		position: relative;
-		background: #744eff;
-		content: attr(data-front);
-		transform: translateY(0) rotateX(0);
-	}
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+}
+.btn-flip:active {
+  transform: scale(0.9);
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #323237;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #ffffff;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #744eff;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
 }
 
 .intro__content_text > h2:hover {
@@ -98,20 +80,17 @@ body {
   text-shadow: 0px 0px 15px #744eff;
 }
 
-[class^='edge__section__content_item-'] {
+[class^=edge__section__content_item-] {
   width: 323px;
   height: 416px;
   background: #080024;
-
   margin: auto;
   text-align: center;
   padding-top: 70px;
 }
 
 /* END MAIN */
-
 /* FOOTER */
-
 .footer__section__settings_privicy-terms > a:hover {
   color: #744eff;
 }
@@ -125,7 +104,6 @@ body {
 }
 
 /* FOOTER END */
-
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -139,22 +117,23 @@ body {
   border-bottom-right-radius: 6px;
   background: linear-gradient(#0a005f, #05001b);
   /*box-shadow: 0px 0px 20px black;*/
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 /* ANIMATION */
-
 @keyframes screenshotes {
   0% {
     box-shadow: 0px 0px 0px black;
-  } 50% {
+  }
+  50% {
     box-shadow: 0px 0px 100px rgba(0, 102, 255, 0.3);
-  } 100% {
+  }
+  100% {
     box-shadow: 0px 0px 0px black;
   }
 }
-
-@keyframes imgRotate{
+@keyframes imgRotate {
   0% {
     transform: rotate(0);
   }
@@ -168,15 +147,14 @@ body {
     transform: rotate(0);
   }
 }
-
-@keyframes btn{
+@keyframes btn {
   0% {
-  margin-left: 0px;
+    margin-left: 0px;
   }
   50% {
-  margin-left: 15px;
+    margin-left: 15px;
   }
   100% {
     margin-left: 0px;
   }
-}
+}/*# sourceMappingURL=BlueBackground.css.map */

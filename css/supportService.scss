@@ -13,11 +13,12 @@
   box-shadow: 0 5px 20px 5px rgba(255, 96, 255, 0.3);
   font-size: 1.5em;
   transition: all 0.3s ease;
-}
-.help:hover {
-  transform: scale(0.95);
-  background: #9738d6;
-  box-shadow: 0 5px 60px 5px #9738d6;
+
+  &:hover {
+    transform: scale(0.95);
+    background: #9738d6;
+    box-shadow: 0 5px 60px 5px #9738d6;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -25,15 +26,17 @@
     right: 40px;
   }
 }
+
 @media (max-width: 675px) {
   .message {
     right: 25px;
     bottom: 20px;
   }
 }
+
 @media (max-width: 415px) {
   .message {
     right: 25px;
     bottom: 25px;
   }
-}/*# sourceMappingURL=supportService.css.map */
+}

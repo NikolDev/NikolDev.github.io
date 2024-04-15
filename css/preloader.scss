@@ -12,8 +12,10 @@
   z-index: 1001;
 }
 
-.preloader__block p {
-  color: #dddddd;
+.preloader__block {
+  p {
+    color: #dddddd;
+  }
 }
 
 .preloader__block_loading {
@@ -23,7 +25,7 @@
   border-radius: 100%;
   border-top: 3px solid #b84eff;
   border-right: 3px solid #1b1b1b;
-  border-left: 3px solid #1b1b1b;
+  border-left:3px solid #1b1b1b;
   animation: rotateCircle 0.75s ease infinite;
   box-shadow: 0px 0px 250px #b84eff;
 }
@@ -42,18 +44,22 @@
   line-height: 40px;
   text-align: center;
   color: #fff;
-  text-shadow: 0px 0px 50px rgba(160, 58, 255, 0.5);
+  text-shadow: 0px 0px 50px rgb(160, 58, 255, 0.5);
   animation: showPre 3s ease infinite;
 }
 
-.centerScreen > h1 {
-  font-weight: 900;
+.centerScreen {
+  > h1 {
+    font-weight: 900;
+  }
 }
 
-.centerScreen > h3 {
-  font-size: 2.05em;
-  font-weight: 100;
-  animation: changeColor 3s ease infinite;
+.centerScreen {
+  > h3 {
+    font-size: 2.05em;
+    font-weight: 100;
+    animation: changeColor 3s ease infinite;
+  }
 }
 
 @keyframes showPre {
@@ -68,6 +74,7 @@
     opacity: 1;
   }
 }
+
 @keyframes rotateCircle {
   from {
     transform: rotate(0turn);
@@ -76,6 +83,7 @@
     transform: rotate(1turn);
   }
 }
+
 @keyframes changeColor {
   0% {
     color: #b84eff;
@@ -87,6 +95,7 @@
     color: #b84eff;
   }
 }
+
 .loaded_hiding .preloader__block {
   transition: 0.5s opacity;
   opacity: 0;
@@ -94,4 +103,4 @@
 
 .loaded .preloader__block {
   display: none;
-}/*# sourceMappingURL=preloader.css.map */
+}
