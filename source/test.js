@@ -1,4 +1,4 @@
-let count = '0';
+/*let count = '0';
 let close = document.querySelector('.installApp')
 let closeBtn = document.querySelector('.btn-1')
 
@@ -15,4 +15,4 @@ if (localStorage.count == 0) {
 } else {
   close.style.opacity = "0";
   close.style.visibility = "hidden";
-}
+}*/
