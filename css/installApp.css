@@ -1,0 +1,155 @@
+.installApp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: 1000000000000000000000;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.install {
+  width: 0px;
+  height: 350px;
+  background: rgb(29, 0, 48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  box-shadow: 0px 0px 100px black;
+  border-radius: 25px;
+  color: #fff;
+  text-align: center;
+}
+.install > h1 {
+  margin-top: 25px;
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0.5;
+}
+.company > p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.company > img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-inst {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 230px;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-7 {
+  position: relative;
+  background-image: linear-gradient(to top, #1e7244 0%, #1e723e 1%, #2a985b 100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-7:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to top, #2e885b 0%, #4eac7d 1%, #5ab98d 100%);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.btn-7:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-7:active {
+  transform: translateY(2px);
+}
+
+.btn-1 {
+  margin-top: 30px;
+  width: 100px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  color: #ffffff;
+  background-image: linear-gradient(to top, #721e1e 0%, #721e1e 1%, #982a2a 100%);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.btn-1:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to top, #882e2e 0%, #ac4e4e 1%, #b95a5a 100%);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+.btn-1:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-1:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 550px) {
+  .install {
+    width: 310px;
+    height: 270px;
+  }
+  .btn-inst {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    margin-top: 15px;
+    width: 160px;
+  }
+  .btn-1 {
+    margin-top: 15px;
+    width: 100px;
+  }
+  .install > h1 {
+    font-size: 1.4em;
+  }
+}/*# sourceMappingURL=installApp.css.map */
