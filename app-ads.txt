@@ -15,6 +15,13 @@ smartadserver.com, 4343, RESELLER
 smartadserver.com, 4839, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4190, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4467, RESELLER
+appnexus.com, 17779, RESELLER
+indexexchange.com, 214183, RESELLER, 50b1c356f2c5c8fc
+outbrain.com, 0073fa86cff719c752763d2c3ee52c8f00, RESELLER
+pubmatic.com, 167130, RESELLER, 5d62403b186f2ace
+themediagrid.com, NC7LXT, RESELLER, 35d5010d7789b49d
+video.unrulymedia.com, 657436911, RESELLER
+xandr.com, 17779, RESELLER
 smartadserver.com, 4457, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 3172, RESELLER, 060d053dcf45cbf3
 sonobi.com, 2b51f34067, RESELLER, d1a215d9eb5aee9e
@@ -303,3 +310,4 @@ smartclip.net, 27985, RESELLER
 bidease.com, bidease_seller_20, RESELLER
 mars.media, 1010442, RESELLER, 8624339f102fb076
 ignitemediatech.com, pub_11115, RESELLER
+
